@@ -36,8 +36,8 @@ for (let item in details) {
         this.profie.innerHTML = `
         <div class="card card-body mb-3">
             <div class="row">
-                <div class="col-md-3 d-flex flex-column align-items-center"> 
-                    <img class="img-fluid mb-2 rounded-circle border border-secondary" src="${user.avatar_url}">
+                <div class="col-md-2 d-flex flex-column align-items-center"> 
+                    <img class="img-fluid mb-1 rounded-circle border border-secondary" src="${user.avatar_url}">
                     <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block">View Profile</a>
                 </div>
                 <div class="col-md-9">
