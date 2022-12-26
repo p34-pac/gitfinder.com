@@ -14,8 +14,6 @@ class UI{
             since: user.created_at,
             location: user.location
         };
-        console.log(details)
-
        let time = details.since;
        let T = time.split(':')
        let rT = T[0].split('T');
