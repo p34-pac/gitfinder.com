@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Finder</title>
-    <link rel="stylesheet" href="cyborg.css">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-primary mb-3">
@@ -20,8 +19,8 @@
             <h1>Search Github Users</h1>
             <p class="lead">Enter a username to fetch a user profile and repos</p>
 
-            <input type="search" id="userIn" class="form-control" placeholder="Github Username">
-            <button class="btn-primary w-10 mt-3" id="searchUser">search</button>
+            <input type="text" id="userIn" class="form-control" placeholder="Github Username">
+            <button class="btn-primary w-10 mt-3" id="searchUser">submit</button>
         </div>
         <br>
         <div id="profile"></div>
@@ -29,6 +28,15 @@
 
     <footer class="mt-5 p-3 text-center bg-light">
         Github Finder &copy;
+        <p class="d-flex flex-column align-items-center">
+            <select id="selection">
+                <option value="cyborg.css">Cyborg css</option>
+                <option value="sketchy.css">Sketchy css</option>
+                <option value="morph.css">Morphy css</option>
+            </menu>
+        </select>
+            <button class="btn btn-primary w-10 mt-3" id="change"> change</button>
+        </p>
     </footer>
 
     <script src="github.js"></script>

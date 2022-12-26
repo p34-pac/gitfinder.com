@@ -34,3 +34,14 @@ searchUser.addEventListener('click', ()=>{
         ui.clearProfile();
     }
 })
+let selection = document.getElementById('selection');
+document.getElementById('change').addEventListener('click', change);
+let head = document.head;
+let link = document.createElement('link');
+link.href = selection.value;
+link.rel = 'stylesheet';
+head.appendChild(link)
+function change(){
+    link.href = selection.value;
+
+}
